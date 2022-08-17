@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Travel Landing Page</title>
+    </head>
+    <body>
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo"></h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="Video Of Snowfall.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2></h2> 
+      <h3>Cool Escape</h3>
+      <p> The Long Winter Waits   </p>
+      <a href="#">Take a Look</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Frozen</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+  })
+  </script>
+  </body>
+  </html>
